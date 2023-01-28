@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="usn" value="admin"/>
+    <parameter name="pass" value="manager"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="Url" value="http://desktop-23dko3h/login.do"/>
+    <classes>
+      <class name="testNGPack.TestValidLogin2">
+        <methods>
+          <include name="method1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNGPack.TestValidLogin2 -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="usn" value="admin"/>
+    <parameter name="pass" value="manager"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="Url" value="http://desktop-23dko3h/login.do"/>
+    <classes>
+      <class name="testNGPack.TestValidLogin2">
+        <methods>
+          <include name="method1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNGPack.TestValidLogin2 -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
